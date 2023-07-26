@@ -1,4 +1,4 @@
-import pprint
+
 from tenable.io import TenableIO
 
 scan_running = True
