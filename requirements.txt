@@ -1,0 +1,3 @@
+tenable-io
+requests
+pandas
