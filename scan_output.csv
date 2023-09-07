@@ -27,7 +27,7 @@ SSH protocol :
   Version : unknown
 ",masoolin-vm-u22.habana-labs.com
 ,"
-The following RPC services are available on TCP port 37029 :
+The following RPC services are available on UDP port 41433 :
 
  - program: 100021 (nlockmgr), version: 1
  - program: 100021 (nlockmgr), version: 3
@@ -41,12 +41,14 @@ The following RPC services are available on TCP port 111 :
  - program: 100000 (portmapper), version: 2
 ",masoolin-vm-u22.habana-labs.com
 ,"
-The following RPC services are available on TCP port 47523 :
+The following RPC services are available on TCP port 44575 :
 
- - program: 100024 (status), version: 1
+ - program: 100021 (nlockmgr), version: 1
+ - program: 100021 (nlockmgr), version: 3
+ - program: 100021 (nlockmgr), version: 4
 ",masoolin-vm-u22.habana-labs.com
 ,"
-The following RPC services are available on UDP port 54410 :
+The following RPC services are available on TCP port 39641 :
 
  - program: 100024 (status), version: 1
 ",masoolin-vm-u22.habana-labs.com
@@ -58,11 +60,9 @@ The following RPC services are available on UDP port 111 :
  - program: 100000 (portmapper), version: 2
 ",masoolin-vm-u22.habana-labs.com
 ,"
-The following RPC services are available on UDP port 58573 :
+The following RPC services are available on UDP port 55530 :
 
- - program: 100021 (nlockmgr), version: 1
- - program: 100021 (nlockmgr), version: 3
- - program: 100021 (nlockmgr), version: 4
+ - program: 100024 (status), version: 1
 ",masoolin-vm-u22.habana-labs.com
 ,"
 Remote operating system : Linux Kernel 5.15.0-75-generic on Ubuntu 22.04
@@ -94,12 +94,12 @@ The remote host is running Linux Kernel 5.15.0-75-generic on Ubuntu 22.04",masoo
 
 Nessus version : 10.5.4
 Nessus build : 20013
-Plugin feed version : 202308161008
+Plugin feed version : 202309051007
 Scanner edition used : Nessus
 Scanner OS : LINUX
 Scanner distribution : ubuntu1404-x86-64
 Scan type : Normal
-Scan name : ma_Habana_new_scantxlxrvafqh
+Scan name : ma_Habana_new_scanoscnyzyjte
 Scan policy used : Advanced Network Scan
 Scanner IP : 10.111.2.200
 
@@ -347,7 +347,7 @@ Here is the list of packages installed on the remote Debian Linux system :
   ii   evolution-data-server  3.44.4-0ubuntu1.1  amd64  evolution database backend server
   ii   evolution-data-server-common  3.44.4-0ubuntu1.1  all  architecture independent files for Evolution Data Server
   ii   exfatprogs  1.1.3-1  amd64  tools to create, check and label exFAT filesystems
-  ii   exo-utils  4.16.3-1  amd64  Utility files for libexo
+  ii   exo-utils  4.16.3-1ubuntu0.1~esm1  amd64  Utility files for libexo
   ii   extlinux  3:6.04~git20190206.bf6db5b4+dfsg1-3ubuntu1  amd64  collection of bootloaders (Linux ext2/ext3/ext4, btrfs, and xfs bootloader)
   ii   f2fs-tools  1.14.0-2build1  amd64  Tools for Flash-Friendly File System
   ii   fakeroot  1.28-1ubuntu1  amd64  tool for simulating superuser privileges
@@ -359,8 +359,8 @@ Here is the list of packages installed on the remote Debian Linux system :
   ii   file-roller  3.42.0-1  amd64  archive manager for GNOME
   ii   finalrd  9build1  all  final runtime directory for shutdown
   ii   findutils  4.8.0-1ubuntu3  amd64  utilities for finding files--find, xargs
-  ii   firefox  116.0.3+build2-0ubuntu0.22.04.1~mt1  amd64  Safe and easy web browser from Mozilla
-  ii   firefox-locale-en  116.0.3+build2-0ubuntu0.22.04.1~mt1  amd64  English language pack for Firefox
+  ii   firefox  117.0+build2-0ubuntu0.22.04.1~mt1  amd64  Safe and easy web browser from Mozilla
+  ii   firefox-locale-en  117.0+build2-0ubuntu0.22.04.1~mt1  amd64  English language pack for Firefox
   ii   firmware-sof-signed  2.0-1ubuntu4.1  all  Intel SOF firmware - signed
   ii   flex  2.6.4-8build2  amd64  fast lexical analyzer generator
   ii   fontconfig  2.13.1-4.2ubuntu5  amd64  generic font configuration library - support binaries
@@ -492,7 +492,7 @@ Here is the list of packages installed on the remote Debian Linux system :
   ii   gamin  0.1.10-6  amd64  File and directory monitoring system
   ii   gawk  1:5.1.0-1build3  amd64  GNU awk, a pattern scanning and processing language
   ii   gcc  4:11.2.0-1ubuntu1  amd64  GNU C compiler
-  ii   gcc-10-base  10.5.0-1ubuntu1~22.04  amd64  GCC, the GNU ",masoolin-vm-u22.habana-labs.com
+  ii   gcc-10-base  10.5.0-1ubuntu1~22.04  amd64  GCC",masoolin-vm-u22.habana-labs.com
 ,An SSH server is running on this port.,masoolin-vm-u22.habana-labs.com
 ,"
 The following IPv6 interfaces are set on the remote host :
@@ -509,7 +509,7 @@ The following IPv4 addresses are set on the remote host :
 ",masoolin-vm-u22.habana-labs.com
 ,,masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1461
+  Process ID   : 1287
   Executable   : /usr/sbin/cups-browsed
   Command line : /usr/sbin/cups-browsed
 ",masoolin-vm-u22.habana-labs.com
@@ -519,59 +519,59 @@ The following IPv4 addresses are set on the remote host :
   Command line : /sbin/init
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1230
+  Process ID   : 1138
   Executable   : /usr/sbin/rpc.statd
   Command line : /sbin/rpc.statd
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1230
-  Executable   : /usr/sbin/rpc.statd
-  Command line : /sbin/rpc.statd
-",masoolin-vm-u22.habana-labs.com
-,"
-  Process ID   : 1230
-  Executable   : /usr/sbin/rpc.statd
-  Command line : /sbin/rpc.statd
-",masoolin-vm-u22.habana-labs.com
-,"
-  Process ID   : 1034
+  Process ID   : 982
   Executable   : /usr/sbin/avahi-daemon
   Command line : avahi-daemon: running [masoolin-vm-u22.local]
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1230
+  Process ID   : 982
+  Executable   : /usr/sbin/avahi-daemon
+  Command line : avahi-daemon: running [masoolin-vm-u22.local]
+",masoolin-vm-u22.habana-labs.com
+,"
+  Process ID   : 1138
   Executable   : /usr/sbin/rpc.statd
   Command line : /sbin/rpc.statd
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1358
+  Process ID   : 1247
   Executable   : /usr/sbin/sshd
-  Command line : sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+  Command line : sshd: /usr/sbin/sshd -D [listener] 1 of 10-100 startups
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 4162
+  Process ID   : 982
+  Executable   : /usr/sbin/avahi-daemon
+  Command line : avahi-daemon: running [masoolin-vm-u22.local]
+",masoolin-vm-u22.habana-labs.com
+,"
+  Process ID   : 2910
   Executable   : /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
   Command line : /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
 ",masoolin-vm-u22.habana-labs.com
 ,"
   Process ID   : 1138
+  Executable   : /usr/sbin/rpc.statd
+  Command line : /sbin/rpc.statd
+",masoolin-vm-u22.habana-labs.com
+,"
+  Process ID   : 1072
   Executable   : /usr/sbin/ntpd
   Command line : /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 136:139
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1134
+  Process ID   : 1071
   Executable   : /usr/bin/vncserver-x11-core
   Command line : /usr/bin/vncserver-x11-core -service
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1134
+  Process ID   : 1071
   Executable   : /usr/bin/vncserver-x11-core
   Command line : /usr/bin/vncserver-x11-core -service
-",masoolin-vm-u22.habana-labs.com
-,"
-  Process ID   : 1034
-  Executable   : /usr/sbin/avahi-daemon
-  Command line : avahi-daemon: running [masoolin-vm-u22.local]
 ",masoolin-vm-u22.habana-labs.com
 ,"
   Process ID   : 1
@@ -579,34 +579,34 @@ The following IPv4 addresses are set on the remote host :
   Command line : /sbin/init
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1034
-  Executable   : /usr/sbin/avahi-daemon
-  Command line : avahi-daemon: running [masoolin-vm-u22.local]
+  Process ID   : 1138
+  Executable   : /usr/sbin/rpc.statd
+  Command line : /sbin/rpc.statd
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1121
+  Process ID   : 1061
   Executable   : /usr/bin/vncserver-virtuald
   Command line : /usr/bin/vncserver-virtuald -fg
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 964
+  Process ID   : 966
   Executable   : /usr/lib/systemd/systemd-networkd
   Command line : /lib/systemd/systemd-networkd
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 4162
+  Process ID   : 2910
   Executable   : /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
   Command line : /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
 ",masoolin-vm-u22.habana-labs.com
 ,"
-  Process ID   : 1121
+  Process ID   : 1061
   Executable   : /usr/bin/vncserver-virtuald
   Command line : /usr/bin/vncserver-virtuald -fg
 ",masoolin-vm-u22.habana-labs.com
 ,"
 The following MAC addresses exist on the remote host :
 
-  - 02:42:c6:cd:a9:ea (interface docker0)
+  - 02:42:b9:bd:0f:e2 (interface docker0)
   - 00:50:56:80:3b:82 (interface ens160)
 ",masoolin-vm-u22.habana-labs.com
 Low,"
@@ -737,66 +737,12 @@ Confidence level : 100
   Hostname : masoolin-vm-u22
     masoolin-vm-u22 (hostname command)",masoolin-vm-u22.habana-labs.com
 ,"
-  The host has not yet been rebooted.
-",masoolin-vm-u22.habana-labs.com
+  reboot   system boot  5.15.0-75-generi Tue Aug 22 15:07   still running
+  
+  wtmp begins Thu Aug 17 00:24:30 2023",masoolin-vm-u22.habana-labs.com
 ,"
 
-. You need to take the following 10 actions :
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 ESM / 22.04 ESM / 22.10 : EditorConfig Core C vulnerability (USN-5842-1) (171014) ]
-
-+ Action to take : Update the affected editorconfig, libeditorconfig-dev and / or libeditorconfig0 packages.
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 ESM / 22.04 ESM / 22.10 : FFmpeg vulnerabilities (USN-5958-1) (172614) ]
-
-+ Action to take : Update the affected packages.
-
-+Impact : Taking this action will resolve 4 different vulnerabilities (CVEs).
-
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 ESM / 22.04 ESM / 22.10 : VLC media player vulnerabilities (USN-6180-1) (177459) ]
-
-+ Action to take : Update the affected packages.
-
-+Impact : Taking this action will resolve 7 different vulnerabilities (CVEs).
-
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 ESM / 22.04 ESM : Exo vulnerability (USN-6008-1) (174153) ]
-
-+ Action to take : Update the affected packages.
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 ESM / 22.04 ESM : GNU SASL vulnerability (USN-6169-1) (177354) ]
-
-+ Action to take : Update the affected packages.
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 LTS / 22.04 ESM / 22.10 / 23.04 : ImageMagick vulnerabilities (USN-6200-1) (177934) ]
-
-+ Action to take : Update the affected packages.
-
-+Impact : Taking this action will resolve 20 different vulnerabilities (CVEs).
-
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 LTS / 22.04 LTS / 23.04 : Intel Microcode vulnerabilities (USN-6286-1) (179733) ]
-
-+ Action to take : Update the affected intel-microcode package.
-
-+Impact : Taking this action will resolve 3 different vulnerabilities (CVEs).
-
-
-
-[ Ubuntu 16.04 ESM / 18.04 ESM / 20.04 LTS / 22.04 LTS / 23.04 : LibTIFF vulnerabilities (USN-6290-1) (179893) ]
-
-+ Action to take : Update the affected packages.
-
-+Impact : Taking this action will resolve 10 different vulnerabilities (CVEs).
-
+. You need to take the following 3 actions :
 
 
 [ Ubuntu 18.04 ESM / 20.04 LTS / 22.04 LTS / 23.04 : Linux kernel vulnerabilities (USN-6193-1) (178653) ]
@@ -805,6 +751,14 @@ Confidence level : 100
 
 
 [ Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-6246-1) (178794) ]
+
++ Action to take : Update the affected kernel package.
+
++Impact : Taking this action will resolve 6 different vulnerabilities (CVEs).
+
+
+
+[ Ubuntu 20.04 LTS / 22.04 LTS : Linux kernel vulnerabilities (USN-6315-1) (180259) ]
 
 + Action to take : Update the affected kernel package.
 
@@ -894,7 +848,7 @@ Nessus found the following unlocked users with passwords that do not expire :
   - iteamuser
 ",masoolin-vm-u22.habana-labs.com
 ,"The following is a consolidated list of detected MAC addresses:
-  - 02:42:C6:CD:A9:EA
+  - 02:42:B9:BD:0F:E2
   - 00:50:56:80:3B:82
 ",masoolin-vm-u22.habana-labs.com
 ,,masoolin-vm-u22.habana-labs.com
@@ -1229,340 +1183,340 @@ bookworm/sid
 This is a Ubuntu system
 
 OS Security Patch Assessment is available for this host.
-Runtime : 4.703605 seconds
+Runtime : 4.708484 seconds
 ",masoolin-vm-u22.habana-labs.com
 ,"USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root           1  0.2  0.0 168416 13880 ?        Ss   Jul26  68:43 /sbin/init
-root           2  0.0  0.0      0     0 ?        S    Jul26   0:02 [kthreadd]
-root           3  0.0  0.0      0     0 ?        I<   Jul26   0:00 [rcu_gp]
-root           4  0.0  0.0      0     0 ?        I<   Jul26   0:00 [rcu_par_gp]
-root           5  0.0  0.0      0     0 ?        I<   Jul26   0:00 [slub_flushwq]
-root           6  0.0  0.0      0     0 ?        I<   Jul26   0:00 [netns]
-root           8  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/0:0H-events_highpri]
-root          10  0.0  0.0      0     0 ?        I<   Jul26   0:00 [mm_percpu_wq]
-root          11  0.0  0.0      0     0 ?        S    Jul26   0:00 [rcu_tasks_rude_]
-root          12  0.0  0.0      0     0 ?        S    Jul26   0:00 [rcu_tasks_trace]
-root          13  0.0  0.0      0     0 ?        S    Jul26   0:42 [ksoftirqd/0]
-root          14  0.0  0.0      0     0 ?        I    Jul26   5:18 [rcu_sched]
-root          15  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/0]
-root          16  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/0]
-root          18  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/0]
-root          19  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/1]
-root          20  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/1]
-root          21  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/1]
-root          22  0.0  0.0      0     0 ?        S    Jul26   0:39 [ksoftirqd/1]
-root          24  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/1:0H-events_highpri]
-root          25  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/2]
-root          26  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/2]
-root          27  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/2]
-root          28  0.0  0.0      0     0 ?        S    Jul26   0:33 [ksoftirqd/2]
-root          30  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/2:0H-events_highpri]
-root          31  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/3]
-root          32  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/3]
-root          33  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/3]
-root          34  0.0  0.0      0     0 ?        S    Jul26   0:31 [ksoftirqd/3]
-root          36  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/3:0H-events_highpri]
-root          37  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/4]
-root          38  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/4]
-root          39  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/4]
-root          40  0.0  0.0      0     0 ?        S    Jul26   0:46 [ksoftirqd/4]
-root          42  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/4:0H-events_highpri]
-root          43  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/5]
-root          44  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/5]
-root          45  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/5]
-root          46  0.0  0.0      0     0 ?        S    Jul26   0:42 [ksoftirqd/5]
-root          48  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/5:0H-events_highpri]
-root          49  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/6]
-root          50  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/6]
-root          51  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/6]
-root          52  0.0  0.0      0     0 ?        S    Jul26   0:36 [ksoftirqd/6]
-root          54  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/6:0H-events_highpri]
-root          55  0.0  0.0      0     0 ?        S    Jul26   0:00 [cpuhp/7]
-root          56  0.0  0.0      0     0 ?        S    Jul26   0:00 [idle_inject/7]
-root          57  0.0  0.0      0     0 ?        S    Jul26   0:03 [migration/7]
-root          58  0.0  0.0      0     0 ?        S    Jul26   0:33 [ksoftirqd/7]
-root          60  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kworker/7:0H-events_highpri]
-root          61  0.0  0.0      0     0 ?        S    Jul26   0:00 [kdevtmpfs]
-root          62  0.0  0.0      0     0 ?        I<   Jul26   0:00 [inet_frag_wq]
-root          63  0.0  0.0      0     0 ?        S    Jul26   0:00 [kauditd]
-root          67  0.0  0.0      0     0 ?        S    Jul26   0:02 [khungtaskd]
-root          68  0.0  0.0      0     0 ?        S    Jul26   0:00 [oom_reaper]
-root          69  0.0  0.0      0     0 ?        I<   Jul26   0:00 [writeback]
-root          70  0.0  0.0      0     0 ?        S    Jul26   0:29 [kcompactd0]
-root          71  0.0  0.0      0     0 ?        SN   Jul26   0:00 [ksmd]
-root          72  0.0  0.0      0     0 ?        SN   Jul26   0:13 [khugepaged]
-root         119  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kintegrityd]
-root         120  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kblockd]
-root         121  0.0  0.0      0     0 ?        I<   Jul26   0:00 [blkcg_punt_bio]
-root         122  0.0  0.0      0     0 ?        I<   Jul26   0:00 [tpm_dev_wq]
-root         123  0.0  0.0      0     0 ?        I<   Jul26   0:00 [ata_sff]
-root         124  0.0  0.0      0     0 ?        I<   Jul26   0:00 [md]
-root         125  0.0  0.0      0     0 ?        I<   Jul26   0:00 [edac-poller]
-root         126  0.0  0.0      0     0 ?        I<   Jul26   0:00 [devfreq_wq]
-root         127  0.0  0.0      0     0 ?        S    Jul26   0:00 [watchdogd]
-root         133  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/1:1H-kblockd]
-root         135  0.0  0.0      0     0 ?        S    Jul26   0:00 [kswapd0]
-root         136  0.0  0.0      0     0 ?        S    Jul26   0:00 [ecryptfs-kthrea]
-root         138  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kthrotld]
-root         139  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/24-pciehp]
-root         140  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/25-pciehp]
-root         141  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/26-pciehp]
-root         142  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/27-pciehp]
-root         143  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/28-pciehp]
-root         144  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/29-pciehp]
-root         145  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/30-pciehp]
-root         146  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/31-pciehp]
-root         147  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/32-pciehp]
-root         148  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/33-pciehp]
-root         149  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/34-pciehp]
-root         150  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/35-pciehp]
-root         151  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/36-pciehp]
-root         152  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/37-pciehp]
-root         153  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/38-pciehp]
-root         154  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/39-pciehp]
-root         155  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/40-pciehp]
-root         156  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/41-pciehp]
-root         157  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/42-pciehp]
-root         158  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/43-pciehp]
-root         159  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/44-pciehp]
-root         160  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/45-pciehp]
-root         161  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/46-pciehp]
-root         162  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/47-pciehp]
-root         163  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/48-pciehp]
-root         164  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/49-pciehp]
-root         165  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/50-pciehp]
-root         166  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/51-pciehp]
-root         167  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/52-pciehp]
-root         168  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/53-pciehp]
-root         169  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/54-pciehp]
-root         170  0.0  0.0      0     0 ?        S    Jul26   0:00 [irq/55-pciehp]
-root         171  0.0  0.0      0     0 ?        I<   Jul26   0:00 [acpi_thermal_pm]
-root         173  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_0]
-root         174  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_0]
-root         175  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_1]
-root         176  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_1]
-root         178  0.0  0.0      0     0 ?        I<   Jul26   0:00 [vfio-irqfd-clea]
-root         179  0.0  0.0      0     0 ?        I<   Jul26   0:00 [mld]
-root         180  0.0  0.0      0     0 ?        I<   Jul26   0:00 [ipv6_addrconf]
-root         190  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kstrp]
-root         194  0.0  0.0      0     0 ?        I<   Jul26   0:00 [zswap-shrink]
-root         206  0.0  0.0      0     0 ?        I<   Jul26   0:00 [charger_manager]
-root         229  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/7:1H-kblockd]
-root         264  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/2:1H-kblockd]
-root         265  0.0  0.0      0     0 ?        I<   Jul26   0:00 [cryptd]
-root         266  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_2]
-root         267  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_2]
-root         268  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_3]
-root         269  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_3]
-root         272  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_4]
-root         286  0.0  0.0      0     0 ?        I<   Jul26   0:00 [mpt_poll_0]
-root         287  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_4]
-root         290  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_5]
-root         291  0.0  0.0      0     0 ?        I<   Jul26   0:00 [mpt/0]
-root         294  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_5]
-root         295  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_6]
-root         296  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_6]
-root         297  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_7]
-root         298  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_7]
-root         299  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_8]
-root         300  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_8]
-root         301  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_9]
-root         302  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_9]
-root         303  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_10]
-root         304  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_10]
-root         305  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_11]
-root         306  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_11]
-root         307  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_12]
-root         308  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_12]
-root         309  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_13]
-root         310  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_13]
-root         311  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_14]
-root         312  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_14]
-root         313  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_15]
-root         314  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_15]
-root         315  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_16]
-root         316  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_16]
-root         317  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_17]
-root         318  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_17]
-root         319  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_18]
-root         320  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_18]
-root         321  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_19]
-root         322  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_19]
-root         323  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_20]
-root         324  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_20]
-root         325  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_21]
-root         326  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_21]
-root         327  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_22]
-root         328  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_22]
-root         329  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_23]
-root         330  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_23]
-root         331  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_24]
-root         332  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_24]
-root         333  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_25]
-root         334  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_25]
-root         335  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_26]
-root         336  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_26]
-root         337  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_27]
-root         338  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_27]
-root         339  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_28]
-root         340  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_28]
-root         341  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_29]
-root         342  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_29]
-root         343  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_30]
-root         344  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_30]
-root         345  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_31]
-root         346  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_31]
-root         360  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/0:1H-kblockd]
-root         362  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/3:1H-kblockd]
-root         373  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/5:1H-kblockd]
-root         388  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/4:1H-kblockd]
-root         389  0.0  0.0      0     0 ?        I<   Jul26   0:01 [kworker/6:1H-kblockd]
-root         395  0.0  0.0      0     0 ?        I<   Jul26   0:00 [ttm_swap]
-root         396  0.0  0.0      0     0 ?        S    Jul26   0:23 [irq/16-vmwgfx]
-root         397  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc0]
-root         398  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc1]
-root         399  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc2]
-root         400  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc3]
-root         401  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc4]
-root         402  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc5]
-root         403  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc6]
-root         404  0.0  0.0      0     0 ?        S    Jul26   0:00 [card0-crtc7]
-root         405  0.0  0.0      0     0 ?        S    Jul26   0:00 [scsi_eh_32]
-root         406  0.0  0.0      0     0 ?        I<   Jul26   0:00 [scsi_tmf_32]
-root         432  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kdmflush]
-root         439  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kdmflush]
-root         466  0.0  0.0      0     0 ?        I<   Jul26   0:00 [raid5wq]
-root         515  0.0  0.0      0     0 ?        S    Jul26   0:17 [jbd2/dm-1-8]
-root         516  0.0  0.0      0     0 ?        I<   Jul26   0:00 [ext4-rsv-conver]
-root         598  0.0  0.3 212436 138756 ?       S<s  Jul26   1:44 /lib/systemd/systemd-journald
-root         621  0.0  0.0      0     0 ?        I<   Jul26   0:00 [rpciod]
-root         622  0.0  0.0      0     0 ?        I<   Jul26   0:00 [xprtiod]
-root         647  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kaluad]
-root         648  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kmpath_rdacd]
-root         650  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kmpathd]
-root         651  0.0  0.0      0     0 ?        I<   Jul26   0:00 [kmpath_handlerd]
-root         656  0.0  0.0 289436 27352 ?        SLsl Jul26   1:47 /sbin/multipathd -d -s
-root         658  0.0  0.0 152560   288 ?        Ssl  Jul26   0:06 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
-root         676  0.0  0.0  12456  7224 ?        Ss   Jul26   0:02 /lib/systemd/systemd-udevd
-root         844  0.0  0.0      0     0 ?        S    Jul26   0:00 [jbd2/sda2-8]
-root         845  0.0  0.0      0     0 ?        I<   Jul26   0:00 [ext4-rsv-conver]
-root         897  0.0  0.0      0     0 ?        I<   Jul26   0:00 [nfit]
-root         901  0.0  0.0      0     0 ?        S    Jul26   0:00 [jbd2/dm-0-8]
-root         902  0.0  0.0      0     0 ?        I<   Jul26   0:00 [ext4-rsv-conver]
-root         917  0.0  0.0   2912   124 ?        Ss   Jul26   0:00 /opt/CrowdStrike/falcond
-root         919  0.8  0.0 1818144 33156 ?       Sl   Jul26 268:47 falcon-sensor
-root         933  0.0  0.0   8580  5000 ?        Ss   Jul26   0:19 /usr/sbin/haveged --Foreground --verbose=1
-_rpc         939  0.0  0.0   8192  4524 ?        Ss   Jul26   0:02 /sbin/rpcbind -f -w
-systemd+     940  0.0  0.0  14824  6380 ?        Ss   Jul26  23:57 /lib/systemd/systemd-oomd
-root         942  0.0  0.0  51144 11700 ?        Ss   Jul26   0:00 /usr/bin/VGAuthService
-root         944  0.0  0.0 250948 10400 ?        Ssl  Jul26  14:55 /usr/bin/vmtoolsd
-root         948  0.0  0.0   5124   176 ?        Ss   Jul26   0:00 /usr/sbin/blkmapd
-root         949  0.0  0.0  12980  2192 ?        Ssl  Jul26   0:01 /usr/sbin/rpc.gssd
-systemd+     964  0.0  0.0  16240  8336 ?        Ss   Jul26   0:05 /lib/systemd/systemd-networkd
-systemd+     966  0.0  0.0  25924 14052 ?        Ss   Jul26   0:40 /lib/systemd/systemd-resolved
-root        1031  0.0  0.0   2812  1128 ?        Ss   Jul26   0:00 /usr/sbin/acpid
-avahi       1034  0.0  0.0  18728  4232 ?        Ss   Jul26   1:31 avahi-daemon: running [masoolin-vm-u22.local]
-message+    1035  0.0  0.0  38352  7392 ?        Ss   Jul26   4:28 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root        1036  0.0  0.0 268304 19468 ?        Ssl  Jul26   3:38 /usr/sbin/NetworkManager --no-daemon
-root        1042  0.0  0.0  82840  4100 ?        Ssl  Jul26   0:59 /usr/sbin/irqbalance --foreground
-root        1045  0.0  0.0  38568 21436 ?        Ss   Jul26   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root        1049  0.1  0.0 264932 13236 ?        Rsl  Jul26  37:23 /usr/libexec/polkitd --no-debug
-avahi       1050  0.0  0.0  18532   328 ?        S    Jul26   0:00 avahi-daemon: chroot helper
-root        1051  0.0  0.0 237488  7356 ?        Ssl  Jul26   0:03 /usr/libexec/power-profiles-daemon
-syslog      1052  0.0  0.0 233496  5964 ?        Ssl  Jul26   0:23 /usr/sbin/rsyslogd -n -iNONE
-root        1055  0.0  0.1 1540800 49272 ?       Ssl  Jul26   1:24 /usr/lib/snapd/snapd
-root        1061  0.0  0.0  71116 12504 ?        Ss   Jul26   0:01 /usr/sbin/sssd -i --logger=files
-root        1064  0.0  0.0 233772  6752 ?        Ssl  Jul26   0:00 /usr/libexec/switcheroo-control
-root        1066  0.0  0.0 393104 13384 ?        Ssl  Jul26   0:05 /usr/libexec/udisks2/udisksd
-root        1070  0.0  0.0  16492  6268 ?        Ss   Jul26   0:04 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
-root        1119  0.0  0.1 179220 76992 ?        S    Jul26  12:08 /usr/libexec/sssd/sssd_be --domain HABANA-LABS.COM --uid 0 --gid 0 --logger=files
-Debian-+    1120  0.0  0.0  35328 13208 ?        Ss   Jul26  12:49 /usr/sbin/snmpd -LOw -u Debian-snmp -g Debian-snmp -I -smux mteTrigger mteTriggerConf -f
-root        1121  0.0  0.0  10604  4756 ?        Ss   Jul26   0:00 /usr/bin/vncserver-virtuald -fg
-root        1122  0.0  0.0   7624  3104 ?        Ss   Jul26   0:00 /usr/bin/vncserver-x11-serviced -fg
-root        1127  0.0  0.1 1504800 42532 ?       Ssl  Jul26  14:01 /usr/bin/containerd
-root        1129  0.0  0.0 317960 12388 ?        Ssl  Jul26   0:06 /usr/sbin/ModemManager
-root        1134  0.0  0.1 312148 73048 ?        Sl   Jul26  20:53 /usr/bin/vncserver-x11-core -service
-ntp         1138  0.0  0.0  87340  6236 ?        Ssl  Jul26   1:38 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 136:139
-root        1193  0.0  0.1 143172 71116 ?        Ss   Jul26   0:56 /opt/puppetlabs/puppet/bin/ruby /opt/puppetlabs/puppet/bin/puppet agent --no-daemonize
-kernoops    1204  0.0  0.0  13084   460 ?        Ss   Jul26   0:35 /usr/sbin/kerneloops --test
-kernoops    1211  0.0  0.0  13084  2476 ?        Ss   Jul26   0:35 /usr/sbin/kerneloops
-statd       1230  0.0  0.0   5036  2768 ?        Ss   Jul26   0:00 /sbin/rpc.statd
-root        1242  0.0  0.1 101392 66424 ?        S    Jul26   1:28 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
-root        1243  0.0  0.0  62184 15764 ?        S    Jul26   0:10 /usr/libexec/sssd/sssd_pam --uid 0 --gid 0 --logger=files
-root        1244  0.0  0.0  59112 12464 ?        S    Jul26   0:09 /usr/libexec/sssd/sssd_autofs --uid 0 --gid 0 --logger=files
-root        1248  0.0  0.0      0     0 ?        I<   Jul26   0:00 [iprt-VBoxWQueue]
-root        1275  0.0  0.0      0     0 ?        S    Jul26   0:00 [iprt-VBoxTscThr]
-root        1358  0.0  0.0  15476  9400 ?        Ss   Jul26   0:06 sshd: /usr/sbin/sshd -D [listener] 1 of 10-100 startups
-root        1363  0.0  0.0 247800  9616 ?        Ssl  Jul26   0:47 /usr/libexec/accounts-daemon
-root        1365  0.0  0.0   6940  3040 ?        Ss   Jul26   0:02 /usr/sbin/cron -f -P
-root        1367  0.0  0.0  98552 15676 ?        Ss   Jul26   0:01 /usr/sbin/cupsd -l
-root        1368  0.0  0.1 1623232 76656 ?       Ssl  Jul26   3:00 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-root        1369  0.0  0.0  24660  8360 ?        Ss   Jul26   0:29 /lib/systemd/systemd-logind
-root        1371  0.0  0.0 418780  4628 ?        Ssl  Jul26   0:00 /usr/sbin/automount --pid-file /var/run/autofs.pid
-colord      1394  0.0  0.0 326124 13832 ?        Ssl  Jul26   0:00 /usr/libexec/colord
-root        1400  0.0  0.0      0     0 ?        I<   Jul26   0:00 [nfsiod]
-root        1407  0.0  0.0 238660  9344 ?        Ssl  Jul26   0:00 /usr/sbin/gdm3
-root        1410  0.0  0.0      0     0 ?        S    Jul26   0:00 [lockd]
-root        1422  0.0  0.0 115628 23676 ?        Ssl  Jul26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root        1461  0.0  0.0 172708 10880 ?        Ssl  Jul26   0:05 /usr/sbin/cups-browsed
-rtkit       1484  0.0  0.0 154048  3240 ?        SNsl Jul26   0:12 /usr/libexec/rtkit-daemon
-root        1493  0.0  0.0  31112  8016 ?        Ss   Jul26   0:35 sendmail: MTA: accepting connections
-lp          1499  0.0  0.0  16328  6688 ?        S    Jul26   0:00 /usr/lib/cups/notifier/dbus dbus://
-root        1717  0.0  0.0 239608  8724 ?        Ssl  Jul26   0:03 /usr/libexec/upowerd
-root        2267  0.0  0.0 295652 20720 ?        Ssl  Jul26   1:26 /usr/libexec/packagekitd
-masoolin    2557  0.0  0.0  18084 10944 ?        Ss   Jul26   0:04 /lib/systemd/systemd --user
-masoolin    2558  0.0  0.0 200444  5788 ?        S    Jul26   0:00 (sd-pam)
-masoolin    2566  0.0  0.0  46472  7260 ?        Ssl  Jul26   0:00 /usr/bin/pipewire
-masoolin    2567  0.0  0.0  30528  7432 ?        Ssl  Jul26   0:03 /usr/bin/pipewire-media-session
-masoolin    2568  0.0  0.0 1867860 24028 ?       Ssl  Jul26  22:51 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-masoolin    2575  0.0  0.0  30484  6824 ?        Ss   Jul26   0:03 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-masoolin    2585  0.0  0.0 238040  8112 ?        Ssl  Jul26   0:00 /usr/libexec/gvfsd
-masoolin    2594  0.0  0.0 380888  6888 ?        Sl   Jul26   0:07 /usr/libexec/gvfsd-fuse /run/user/10237/gvfs -f
-masoolin    2608  0.0  0.0 778440 37380 ?        SNsl Jul26   0:07 /usr/libexec/tracker-miner-fs-3
-masoolin    2621  0.0  0.0 239256  7772 ?        Sl   Jul26   0:00 /usr/libexec/pulse/gsettings-helper
-masoolin    2833  0.0  0.0 322796 10232 ?        Ssl  Jul26   0:03 /usr/libexec/gvfs-udisks2-volume-monitor
-masoolin    2848  0.0  0.0 233944  5984 ?        Ssl  Jul26   0:00 /usr/libexec/gvfs-mtp-volume-monitor
-masoolin    2856  0.0  0.0 312612  8276 ?        Ssl  Jul26   0:30 /usr/libexec/gvfs-afc-volume-monitor
-masoolin    2862  0.0  0.0 234776  6320 ?        Ssl  Jul26   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
-masoolin    2866  0.0  0.0 234040  6756 ?        Ssl  Jul26   0:00 /usr/libexec/gvfs-goa-volume-monitor
-masoolin    2870  0.0  0.0 561920 40104 ?        Sl   Jul26   1:12 /usr/libexec/goa-daemon
-masoolin    2877  0.0  0.0 335796 15044 ?        Sl   Jul26   0:08 /usr/libexec/goa-identity-service
-root        3768  0.0  0.0 349212 16688 ?        Sl   Jul26   0:00 gdm-session-worker [pam/gdm-password]
-masoolin    3810  0.0  0.0 385784  8424 ?        Sl   Jul26   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-masoolin    3814  0.0  0.0 159828  6356 tty2     Ssl+ Jul26   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
-masoolin    3816  0.3  0.5 467036 224472 tty2    Sl+  Jul26 101:31 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/10237/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
-masoolin    3828  0.0  0.0 220428 16092 tty2     Sl+  Jul26   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
-masoolin    3916  0.0  0.0 309620  8288 ?        Ssl  Jul26   0:00 /usr/libexec/at-spi-bus-launcher
-masoolin    3922  0.0  0.0  29000  5020 ?        S    Jul26   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/10237/at-spi/bus_1
-masoolin    3964  0.0  0.0  89304  5196 ?        Ssl  Jul26   0:00 /usr/libexec/gnome-session-ctl --monitor
-masoolin    3979  0.0  0.0 516844 18132 ?        Ssl  Jul26   0:07 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
-masoolin    3999  0.4  1.1 5411236 490504 ?      Ssl  Jul26 152:01 /usr/bin/gnome-shell
-masoolin    4057  0.0  0.0 234024  6652 ?        Ssl  Jul26   0:00 /usr/libexec/xdg-permission-store
-masoolin    4059  0.0  0.0 583188 21204 ?        Sl   Jul26   0:00 /usr/libexec/gnome-shell-calendar-server
-masoolin    4070  0.0  0.0 1079124 26920 ?       Ssl  Jul26   0:00 /usr/libexec/evolution-source-registry
-masoolin    4086  0.0  0.0 423852 25772 ?        Ssl  Jul26   0:00 /usr/bin/Thunar --daemon
-masoolin    4087  0.0  0.0 312268  8560 ?        Sl   Jul26   0:00 /usr/libexec/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0
-masoolin    4096  0.0  0.0 230708  5872 ?        Sl   Jul26   0:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
-masoolin    4101  0.0  0.0 2863132 28168 ?       Sl   Jul26   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-masoolin    4103  0.0  0.0 162748  6976 ?        Sl   Jul26   0:02 /usr/libexec/at-spi2-registryd --use-gnome-session
-masoolin    4122  0.0  0.0   2888   956 ?        Ss   Jul26   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ ""$XDG_SESSION_TYPE"" = ""x11"" ] && echo ""--xim"")
-masoolin    4123  0.0  0.0 307820  6904 ?        Ssl  Jul26   0:00 /usr/libexec/gsd-a11y-settings
-masoolin    4124  0.0  0.0 662368 28160 ?        Ssl  Jul26   0:04 /usr/libexec/gsd-color
-masoolin    4126  0.0  0.0 396052 13172 ?        Sl   Jul26   0:23 /usr/bin/ibus-daemon --panel disable --xim
-masoolin    4127  0.0  0.0 372856 16424 ?        Ssl  Jul26   0:00 /usr/libexec/gsd-datetime
-masoolin    4130  0.0  0.0 309496  7596 ?        Ssl  Jul26   0:53 /usr/libexec/gsd-housekeeping
-masoolin    4139  0.0  0.0 412544 24296 ?        Ssl  Jul26   0:00 /usr/libexec/gsd-keyboard
-masoolin    4140  0.0  0.0 871804 30588 ?        Ssl  Jul26   0:03 /usr/libexec/gsd-media-keys
-masoolin    4142  0.0  0.0 458216 28768 ?        Ssl  Jul26   0:04 /usr/libexec/gsd-power
-masoolin    4143  0.0  0.0 256848 12276 ?        Ssl  Jul26   0:00 /usr/libexec/gsd-print-notifications
-masoolin    4147  0.0  0.0 455252  6812 ?        Ssl  Jul26   0:03 /usr/libexec/gsd-rfkill
-masoolin    4148  0.0  0.0 233684  5044 ?        Ssl  Jul26   0:00 /usr/libexec/gsd-screensaver-proxy
-masoolin    4152  0.0  0.0 463204 10296 ?        Ssl  Jul26   0:10 /usr/libexec/gsd-sharing
-masoolin    4162  0.0  0.1 660428 62964 ?        Sl   Jul26   2:40 /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
-masoolin    4164  0.0  0.0 383432  8256 ?        Ssl  Jul26   0:00 /usr/libexec/gsd-smartcard
-masoolin    4166  0.0  0.1 737168 67864 ?        Sl   Jul26   0:01 /usr/libexec/evolution-data-server/evolution-alarm-notify
-masoolin    4169  0.0  0.0 316740  9416 ?        Ssl  Jul26   0:00 /usr/libexec/gsd-sound
-masoolin    4170  0.0  0.0 ",masoolin-vm-u22.habana-labs.com
+root           1  0.1  0.0 168404 13940 ?        Ss   Aug22  40:18 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Aug22   0:01 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Aug22   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Aug22   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   Aug22   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   Aug22   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   Aug22   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    Aug22   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    Aug22   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    Aug22   0:23 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    Aug22   3:18 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/0]
+root          18  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/1]
+root          21  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    Aug22   0:21 [ksoftirqd/1]
+root          24  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/1:0H-events_highpri]
+root          25  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/2]
+root          26  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/2]
+root          27  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/2]
+root          28  0.0  0.0      0     0 ?        S    Aug22   0:18 [ksoftirqd/2]
+root          30  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/2:0H-events_highpri]
+root          31  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/3]
+root          32  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/3]
+root          33  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/3]
+root          34  0.0  0.0      0     0 ?        S    Aug22   0:16 [ksoftirqd/3]
+root          36  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/3:0H-events_highpri]
+root          37  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/4]
+root          38  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/4]
+root          39  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/4]
+root          40  0.0  0.0      0     0 ?        S    Aug22   0:26 [ksoftirqd/4]
+root          42  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/4:0H-events_highpri]
+root          43  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/5]
+root          44  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/5]
+root          45  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/5]
+root          46  0.0  0.0      0     0 ?        S    Aug22   0:24 [ksoftirqd/5]
+root          48  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/5:0H-events_highpri]
+root          49  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/6]
+root          50  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/6]
+root          51  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/6]
+root          52  0.0  0.0      0     0 ?        S    Aug22   0:19 [ksoftirqd/6]
+root          54  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/6:0H-events_highpri]
+root          55  0.0  0.0      0     0 ?        S    Aug22   0:00 [cpuhp/7]
+root          56  0.0  0.0      0     0 ?        S    Aug22   0:00 [idle_inject/7]
+root          57  0.0  0.0      0     0 ?        S    Aug22   0:02 [migration/7]
+root          58  0.0  0.0      0     0 ?        S    Aug22   0:17 [ksoftirqd/7]
+root          60  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kworker/7:0H-events_highpri]
+root          61  0.0  0.0      0     0 ?        S    Aug22   0:00 [kdevtmpfs]
+root          62  0.0  0.0      0     0 ?        I<   Aug22   0:00 [inet_frag_wq]
+root          63  0.0  0.0      0     0 ?        S    Aug22   0:00 [kauditd]
+root          67  0.0  0.0      0     0 ?        S    Aug22   0:01 [khungtaskd]
+root          68  0.0  0.0      0     0 ?        S    Aug22   0:00 [oom_reaper]
+root          69  0.0  0.0      0     0 ?        I<   Aug22   0:00 [writeback]
+root          70  0.0  0.0      0     0 ?        S    Aug22   0:18 [kcompactd0]
+root          71  0.0  0.0      0     0 ?        SN   Aug22   0:00 [ksmd]
+root          72  0.0  0.0      0     0 ?        SN   Aug22   0:08 [khugepaged]
+root         119  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kintegrityd]
+root         120  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kblockd]
+root         121  0.0  0.0      0     0 ?        I<   Aug22   0:00 [blkcg_punt_bio]
+root         122  0.0  0.0      0     0 ?        I<   Aug22   0:00 [tpm_dev_wq]
+root         123  0.0  0.0      0     0 ?        I<   Aug22   0:00 [ata_sff]
+root         124  0.0  0.0      0     0 ?        I<   Aug22   0:00 [md]
+root         125  0.0  0.0      0     0 ?        I<   Aug22   0:00 [edac-poller]
+root         126  0.0  0.0      0     0 ?        I<   Aug22   0:00 [devfreq_wq]
+root         127  0.0  0.0      0     0 ?        S    Aug22   0:00 [watchdogd]
+root         130  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/0:1H-kblockd]
+root         132  0.0  0.0      0     0 ?        S    Aug22   0:00 [kswapd0]
+root         133  0.0  0.0      0     0 ?        S    Aug22   0:00 [ecryptfs-kthrea]
+root         135  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kthrotld]
+root         136  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/24-pciehp]
+root         137  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/25-pciehp]
+root         138  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/26-pciehp]
+root         139  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/27-pciehp]
+root         140  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/28-pciehp]
+root         141  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/29-pciehp]
+root         142  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/30-pciehp]
+root         143  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/31-pciehp]
+root         144  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/32-pciehp]
+root         145  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/33-pciehp]
+root         146  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/34-pciehp]
+root         147  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/35-pciehp]
+root         148  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/36-pciehp]
+root         149  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/37-pciehp]
+root         150  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/38-pciehp]
+root         151  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/39-pciehp]
+root         152  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/40-pciehp]
+root         153  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/41-pciehp]
+root         154  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/42-pciehp]
+root         155  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/43-pciehp]
+root         156  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/44-pciehp]
+root         157  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/45-pciehp]
+root         158  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/46-pciehp]
+root         159  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/47-pciehp]
+root         160  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/48-pciehp]
+root         161  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/49-pciehp]
+root         162  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/50-pciehp]
+root         163  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/51-pciehp]
+root         164  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/52-pciehp]
+root         165  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/53-pciehp]
+root         166  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/54-pciehp]
+root         167  0.0  0.0      0     0 ?        S    Aug22   0:00 [irq/55-pciehp]
+root         168  0.0  0.0      0     0 ?        I<   Aug22   0:00 [acpi_thermal_pm]
+root         170  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_0]
+root         171  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_0]
+root         172  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_1]
+root         173  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_1]
+root         175  0.0  0.0      0     0 ?        I<   Aug22   0:00 [vfio-irqfd-clea]
+root         178  0.0  0.0      0     0 ?        I<   Aug22   0:00 [mld]
+root         179  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/2:1H-kblockd]
+root         180  0.0  0.0      0     0 ?        I<   Aug22   0:00 [ipv6_addrconf]
+root         190  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kstrp]
+root         195  0.0  0.0      0     0 ?        I<   Aug22   0:00 [zswap-shrink]
+root         207  0.0  0.0      0     0 ?        I<   Aug22   0:00 [charger_manager]
+root         230  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/6:1H-kblockd]
+root         265  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/1:1H-kblockd]
+root         266  0.0  0.0      0     0 ?        I<   Aug22   0:00 [mpt_poll_0]
+root         267  0.0  0.0      0     0 ?        I<   Aug22   0:00 [mpt/0]
+root         268  0.0  0.0      0     0 ?        I<   Aug22   0:00 [cryptd]
+root         282  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_2]
+root         283  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_2]
+root         286  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_3]
+root         290  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_3]
+root         292  0.0  0.0      0     0 ?        I<   Aug22   0:00 [ttm_swap]
+root         293  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_4]
+root         294  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_4]
+root         295  0.0  0.0      0     0 ?        S    Aug22   0:15 [irq/16-vmwgfx]
+root         296  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_5]
+root         297  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_5]
+root         298  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc0]
+root         299  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc1]
+root         300  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc2]
+root         301  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc3]
+root         302  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc4]
+root         303  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc5]
+root         304  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc6]
+root         305  0.0  0.0      0     0 ?        S    Aug22   0:00 [card0-crtc7]
+root         306  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_6]
+root         307  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_6]
+root         308  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_7]
+root         309  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_7]
+root         310  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_8]
+root         311  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_8]
+root         312  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_9]
+root         313  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_9]
+root         314  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_10]
+root         315  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_10]
+root         316  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_11]
+root         317  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_11]
+root         318  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_12]
+root         319  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_12]
+root         320  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_13]
+root         321  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_13]
+root         322  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_14]
+root         323  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_14]
+root         324  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_15]
+root         325  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_15]
+root         326  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_16]
+root         327  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_16]
+root         328  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_17]
+root         329  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_17]
+root         330  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_18]
+root         331  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_18]
+root         332  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_19]
+root         333  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_19]
+root         334  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_20]
+root         335  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_20]
+root         336  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_21]
+root         337  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_21]
+root         338  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_22]
+root         339  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_22]
+root         340  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_23]
+root         341  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_23]
+root         342  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_24]
+root         343  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_24]
+root         345  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_25]
+root         347  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_25]
+root         354  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_26]
+root         355  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_26]
+root         356  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/4:1H-kblockd]
+root         361  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_27]
+root         362  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_27]
+root         364  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_28]
+root         365  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_28]
+root         368  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_29]
+root         369  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_29]
+root         370  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/3:1H-kblockd]
+root         372  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_30]
+root         373  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_30]
+root         374  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_31]
+root         375  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_31]
+root         403  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/7:1H-kblockd]
+root         404  0.0  0.0      0     0 ?        S    Aug22   0:00 [scsi_eh_32]
+root         405  0.0  0.0      0     0 ?        I<   Aug22   0:00 [scsi_tmf_32]
+root         421  0.0  0.0      0     0 ?        I<   Aug22   0:01 [kworker/5:1H-kblockd]
+root         429  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kdmflush]
+root         436  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kdmflush]
+root         466  0.0  0.0      0     0 ?        I<   Aug22   0:00 [raid5wq]
+root         515  0.0  0.0      0     0 ?        S    Aug22   0:11 [jbd2/dm-1-8]
+root         516  0.0  0.0      0     0 ?        I<   Aug22   0:00 [ext4-rsv-conver]
+root         598  0.0  0.2 171632 116320 ?       S<s  Aug22   1:05 /lib/systemd/systemd-journald
+root         623  0.0  0.0      0     0 ?        I<   Aug22   0:00 [rpciod]
+root         624  0.0  0.0      0     0 ?        I<   Aug22   0:00 [xprtiod]
+root         644  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kaluad]
+root         646  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kmpath_rdacd]
+root         649  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kmpathd]
+root         650  0.0  0.0      0     0 ?        I<   Aug22   0:00 [kmpath_handlerd]
+root         652  0.0  0.0 289436 27352 ?        SLsl Aug22   1:10 /sbin/multipathd -d -s
+root         659  0.0  0.0 227324   308 ?        Ssl  Aug22   0:04 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root         673  0.0  0.0  12308  7116 ?        Ss   Aug22   0:01 /lib/systemd/systemd-udevd
+root         837  0.0  0.0      0     0 ?        S    Aug22   0:00 [jbd2/sda2-8]
+root         838  0.0  0.0      0     0 ?        I<   Aug22   0:00 [ext4-rsv-conver]
+root         852  0.0  0.0      0     0 ?        I<   Aug22   0:00 [nfit]
+root         903  0.0  0.0      0     0 ?        S    Aug22   0:00 [jbd2/dm-0-8]
+root         904  0.0  0.0      0     0 ?        I<   Aug22   0:00 [ext4-rsv-conver]
+root         935  0.0  0.0   8580  4940 ?        Ss   Aug22   0:12 /usr/sbin/haveged --Foreground --verbose=1
+_rpc         941  0.0  0.0   8188  4416 ?        Ss   Aug22   0:01 /sbin/rpcbind -f -w
+systemd+     942  0.0  0.0  14824  6168 ?        Ss   Aug22  15:26 /lib/systemd/systemd-oomd
+root         944  0.0  0.0  51152 12024 ?        Ss   Aug22   0:00 /usr/bin/VGAuthService
+root         946  0.0  0.0 250964 10192 ?        Ssl  Aug22   9:36 /usr/bin/vmtoolsd
+root         950  0.0  0.0   5124   172 ?        Ss   Aug22   0:00 /usr/sbin/blkmapd
+root         951  0.0  0.0  12980  2240 ?        Ssl  Aug22   0:00 /usr/sbin/rpc.gssd
+systemd+     966  0.0  0.0  16240  8344 ?        Ss   Aug22   0:04 /lib/systemd/systemd-networkd
+systemd+     968  0.0  0.0  25396 13468 ?        Ss   Aug22   0:28 /lib/systemd/systemd-resolved
+root         980  0.0  0.0   2812  1192 ?        Ss   Aug22   0:00 /usr/sbin/acpid
+avahi        982  0.0  0.0  18844  4204 ?        Ss   Aug22   1:00 avahi-daemon: running [masoolin-vm-u22.local]
+message+     983  0.0  0.0  38408  7584 ?        Ss   Aug22   2:27 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         984  0.0  0.0 268228 19296 ?        Ssl  Aug22   2:01 /usr/sbin/NetworkManager --no-daemon
+avahi        987  0.0  0.0  18532   332 ?        S    Aug22   0:00 avahi-daemon: chroot helper
+root         992  0.0  0.0  82840  3792 ?        Ssl  Aug22   0:38 /usr/sbin/irqbalance --foreground
+root         997  0.0  0.0  38608 21608 ?        Ss   Aug22   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1004  0.1  0.0 264708 12992 ?        Rsl  Aug22  20:53 /usr/libexec/polkitd --no-debug
+root        1008  0.0  0.0 237488  6944 ?        Ssl  Aug22   0:02 /usr/libexec/power-profiles-daemon
+syslog      1009  0.0  0.0 233496  5796 ?        Ssl  Aug22   0:14 /usr/sbin/rsyslogd -n -iNONE
+root        1016  0.0  0.0  71116 12652 ?        Ss   Aug22   0:01 /usr/sbin/sssd -i --logger=files
+root        1018  0.0  0.0 233772  6900 ?        Ssl  Aug22   0:00 /usr/libexec/switcheroo-control
+root        1020  0.0  0.0 393092 13508 ?        Ssl  Aug22   0:03 /usr/libexec/udisks2/udisksd
+root        1021  0.0  0.0  16492  5760 ?        Ss   Aug22   0:02 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+Debian-+    1057  0.0  0.0  35328 13088 ?        Ss   Aug22   8:24 /usr/sbin/snmpd -LOw -u Debian-snmp -g Debian-snmp -I -smux mteTrigger mteTriggerConf -f
+root        1061  0.0  0.0  10604  6004 ?        Ss   Aug22   0:00 /usr/bin/vncserver-virtuald -fg
+root        1062  0.0  0.0   7624  3012 ?        Ss   Aug22   0:00 /usr/bin/vncserver-x11-serviced -fg
+root        1064  0.0  0.1 1505824 42996 ?       Ssl  Aug22   7:27 /usr/bin/containerd
+root        1065  0.0  0.0 244228 12432 ?        Ssl  Aug22   0:03 /usr/sbin/ModemManager
+root        1071  0.0  0.1 229064 65896 ?        Sl   Aug22   7:38 /usr/bin/vncserver-x11-core -service
+ntp         1072  0.0  0.0  87220  5928 ?        Ssl  Aug22   1:07 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 136:139
+root        1075  0.0  0.1 181080 71716 ?        S    Aug22   8:46 /usr/libexec/sssd/sssd_be --domain HABANA-LABS.COM --uid 0 --gid 0 --logger=files
+kernoops    1118  0.0  0.0  13084  2460 ?        Ss   Aug22   0:24 /usr/sbin/kerneloops --test
+kernoops    1127  0.0  0.0  13084   456 ?        Ss   Aug22   0:24 /usr/sbin/kerneloops
+statd       1138  0.0  0.0   5036  2792 ?        Ss   Aug22   0:00 /sbin/rpc.statd
+root        1158  0.0  0.0      0     0 ?        I<   Aug22   0:00 [iprt-VBoxWQueue]
+root        1171  0.0  0.0      0     0 ?        S    Aug22   0:00 [iprt-VBoxTscThr]
+root        1242  0.0  0.1 101956 67844 ?        S    Aug22   1:21 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
+root        1243  0.0  0.0  62176 16360 ?        S    Aug22   0:06 /usr/libexec/sssd/sssd_pam --uid 0 --gid 0 --logger=files
+root        1244  0.0  0.0  59092 12596 ?        S    Aug22   0:06 /usr/libexec/sssd/sssd_autofs --uid 0 --gid 0 --logger=files
+root        1247  0.0  0.0  15476  9376 ?        Ss   Aug22   0:02 sshd: /usr/sbin/sshd -D [listener] 1 of 10-100 startups
+root        1251  0.0  0.0 247204  8652 ?        Ssl  Aug22   0:24 /usr/libexec/accounts-daemon
+root        1253  0.0  0.0   6940  3064 ?        Ss   Aug22   0:01 /usr/sbin/cron -f -P
+root        1254  0.0  0.0  98532 15680 ?        Ss   Aug22   0:00 /usr/sbin/cupsd -l
+root        1255  0.0  0.1 1550268 74924 ?       Ssl  Aug22   1:55 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root        1256  0.0  0.0  24668  8296 ?        Ss   Aug22   0:14 /lib/systemd/systemd-logind
+root        1258  0.0  0.0 418784  4672 ?        Ssl  Aug22   0:00 /usr/sbin/automount --pid-file /var/run/autofs.pid
+root        1271  0.0  0.0      0     0 ?        I<   Aug22   0:00 [nfsiod]
+root        1287  0.0  0.0 172664 11484 ?        Ssl  Aug22   0:03 /usr/sbin/cups-browsed
+root        1288  0.0  0.0      0     0 ?        S    Aug22   0:00 [lockd]
+root        1302  0.0  0.0 115616 23660 ?        Ssl  Aug22   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1305  0.0  0.0 238792  9448 ?        Ssl  Aug22   0:00 /usr/sbin/gdm3
+rtkit       1363  0.0  0.0 154048  3236 ?        SNsl Aug22   0:08 /usr/libexec/rtkit-daemon
+root        1368  0.0  0.0  31116  8160 ?        Ss   Aug22   0:23 sendmail: MTA: accepting connections
+root        1693  0.0  0.0 239484  8208 ?        Ssl  Aug22   0:01 /usr/libexec/upowerd
+root        1807  0.0  0.0 295660 20764 ?        Ssl  Aug22   0:59 /usr/libexec/packagekitd
+lp          1900  0.0  0.0  16328  6568 ?        S    Aug22   0:00 /usr/lib/cups/notifier/dbus dbus://
+colord      1948  0.0  0.0 252380 13744 ?        Ssl  Aug22   0:00 /usr/libexec/colord
+root        2389  0.0  0.0 349168 15960 ?        Sl   Aug22   0:00 gdm-session-worker [pam/gdm-password]
+masoolin    2419  0.0  0.0  18052 10908 ?        Ss   Aug22   0:03 /lib/systemd/systemd --user
+masoolin    2420  0.0  0.0 200448  5776 ?        S    Aug22   0:00 (sd-pam)
+masoolin    2426  0.0  0.0  46316  7228 ?        S<sl Aug22   0:00 /usr/bin/pipewire
+masoolin    2427  0.0  0.0  30348  7112 ?        Ssl  Aug22   0:01 /usr/bin/pipewire-media-session
+masoolin    2428  0.0  0.0 1867940 24260 ?       S<sl Aug22   0:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+masoolin    2433  0.0  0.0  30424  6528 ?        Ss   Aug22   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+masoolin    2435  0.0  0.0 385752  8412 ?        Sl   Aug22   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+masoolin    2439  0.0  0.0 238040  8232 ?        Ssl  Aug22   0:00 /usr/libexec/gvfsd
+masoolin    2444  0.0  0.0 455652  6824 ?        Sl   Aug22   0:05 /usr/libexec/gvfsd-fuse /run/user/10237/gvfs -f
+masoolin    2455  0.0  0.0 778456 29044 ?        SNsl Aug22   0:04 /usr/libexec/tracker-miner-fs-3
+masoolin    2465  0.0  0.0 239256  7924 ?        Sl   Aug22   0:00 /usr/libexec/pulse/gsettings-helper
+masoolin    2498  0.0  0.0 159828  6348 tty2     Ssl+ Aug22   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+masoolin    2500  0.3  0.6 494564 251628 tty2    Sl+  Aug22  66:37 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/10237/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+masoolin    2506  0.0  0.0 220436 15660 tty2     Sl+  Aug22   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+masoolin    2564  0.0  0.0 322772 10324 ?        Ssl  Aug22   0:03 /usr/libexec/gvfs-udisks2-volume-monitor
+masoolin    2578  0.0  0.0 233944  6064 ?        Ssl  Aug22   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+masoolin    2586  0.0  0.0 312612  8132 ?        Ssl  Aug22   0:19 /usr/libexec/gvfs-afc-volume-monitor
+masoolin    2597  0.0  0.0 234776  6256 ?        Ssl  Aug22   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+masoolin    2611  0.0  0.0 234040  6652 ?        Ssl  Aug22   0:00 /usr/libexec/gvfs-goa-volume-monitor
+masoolin    2615  0.0  0.0 571592 40544 ?        Sl   Aug22   0:47 /usr/libexec/goa-daemon
+masoolin    2623  0.0  0.0 335796 15048 ?        Sl   Aug22   0:05 /usr/libexec/goa-identity-service
+masoolin    2630  0.0  0.0 309620  8308 ?        Ssl  Aug22   0:00 /usr/libexec/at-spi-bus-launcher
+masoolin    2636  0.0  0.0  29000  5052 ?        S    Aug22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/10237/at-spi/bus_1
+masoolin    2691  0.0  0.0  89304  5256 ?        Ssl  Aug22   0:00 /usr/libexec/gnome-session-ctl --monitor
+masoolin    2724  0.0  0.0 590568 18124 ?        Ssl  Aug22   0:03 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+masoolin    2757  0.4  1.1 6145104 490204 ?      Ssl  Aug22  85:15 /usr/bin/gnome-shell
+masoolin    2804  0.0  0.0 234028  6696 ?        Ssl  Aug22   0:00 /usr/libexec/xdg-permission-store
+masoolin    2806  0.0  0.0 583192 20832 ?        Sl   Aug22   0:00 /usr/libexec/gnome-shell-calendar-server
+masoolin    2817  0.0  0.0 1013596 27004 ?       Ssl  Aug22   0:00 /usr/libexec/evolution-source-registry
+masoolin    2827  0.0  0.0 423880 25772 ?        Ssl  Aug22   0:00 /usr/bin/Thunar --daemon
+masoolin    2828  0.0  0.0 312268  8648 ?        Sl   Aug22   0:00 /usr/libexec/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0
+masoolin    2835  0.0  0.0 2928684 28076 ?       Sl   Aug22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+masoolin    2837  0.0  0.0 162748  8016 ?        Sl   Aug22   0:01 /usr/libexec/at-spi2-registryd --use-gnome-session
+masoolin    2854  0.0  0.0 230708  6008 ?        Sl   Aug22   0:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+masoolin    2865  0.0  0.0   2888   988 ?        Ss   Aug22   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ ""$XDG_SESSION_TYPE"" = ""x11"" ] && echo ""--xim"")
+masoolin    2866  0.0  0.0 307820  6888 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-a11y-settings
+masoolin    2867  0.0  0.0 449368 28076 ?        Ssl  Aug22   0:02 /usr/libexec/gsd-color
+masoolin    2869  0.0  0.0 372864 16164 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-datetime
+masoolin    2870  0.0  0.0 322364 12856 ?        Sl   Aug22   0:13 /usr/bin/ibus-daemon --panel disable --xim
+masoolin    2872  0.0  0.0 309472  7776 ?        Ssl  Aug22   0:34 /usr/libexec/gsd-housekeeping
+masoolin    2875  0.0  0.0 338800 24596 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-keyboard
+masoolin    2876  0.0  0.0 871800 29808 ?        Ssl  Aug22   0:01 /usr/libexec/gsd-media-keys
+masoolin    2878  0.0  0.0 531952 28896 ?        Ssl  Aug22   0:02 /usr/libexec/gsd-power
+masoolin    2880  0.0  0.0 256712 12176 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-print-notifications
+masoolin    2881  0.0  0.0 455252  6580 ?        Ssl  Aug22   0:01 /usr/libexec/gsd-rfkill
+masoolin    2885  0.0  0.0 233684  6556 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-screensaver-proxy
+masoolin    2886  0.0  0.0 463216 10372 ?        Ssl  Aug22   0:05 /usr/libexec/gsd-sharing
+masoolin    2888  0.0  0.0 383432  8276 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-smartcard
+masoolin    2892  0.0  0.0 316744  9164 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-sound
+masoolin    2893  0.0  0.0 339316 24744 ?        Ssl  Aug22   0:00 /usr/libexec/gsd-wacom
+masoolin    2895  0.0  0.0 424328 28084 ?        Ssl  Aug22   1:52 /usr/libexec/gsd-xsettings
+masoolin    2910  0.0  0.1 660792 63292 ?        Sl   Aug22   1:46 /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
+masoolin    2938  0.0  0.1 812356 68656 ?        Sl   Aug22   0:01 /usr/libexec/evolution-data-server/evolution-alarm-notify
+masoolin    2940  0.0  0.0 847312 31268 ?        Ssl  Aug22   0:02 /usr/libexec/evolution-calendar-factory
+masoolin    2941  0.0  0.0 232272  6804 ?        Sl   Aug22   0:00 /usr/libexec/gsd-disk-utility-notify
+masoolin    2944  0.0  0.0 308440  7396 ?      ",masoolin-vm-u22.habana-labs.com
 ,"OS Security Patch Assessment is available.
 
 Account  : root
@@ -1597,25 +1551,25 @@ The following server-to-client SHA-1 Hash-based Message Authentication Code (HMA
 ,"$ df -h
 Filesystem                             Size  Used Avail Use% Mounted on
 tmpfs                                  4.0G  2.5M  4.0G   1% /run
-/dev/mapper/ubuntu--vg-ubuntu--lv       97G   21G   72G  23% /
-tmpfs                                   20G   77M   20G   1% /dev/shm
+/dev/mapper/ubuntu--vg-ubuntu--lv       97G   19G   74G  21% /
+tmpfs                                   20G   73M   20G   1% /dev/shm
 tmpfs                                  5.0M     0  5.0M   0% /run/lock
-tmpfs                                   20G     0   20G   0% /run/qemu
+tmpfs                                   20G  216K   20G   1% /run/qemu
 /dev/sda2                              2.0G  265M  1.6G  15% /boot
 /dev/mapper/data--vg-data--lv          246G   72K  233G   1% /home
-10.111.63.251:/users_sw/home/masoolin   43T   16T   28T  36% /home/masoolin
-tmpfs                                  4.0G  1.8M  4.0G   1% /run/user/10237
+10.111.63.251:/users_sw/home/masoolin   43T   15T   28T  36% /home/masoolin
+tmpfs                                  4.0G  236K  4.0G   1% /run/user/10237
 tmpfs                                  4.0G  100K  4.0G   1% /run/user/0
 
 
 $ lsblk
 NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
-loop1                       7:1    0  63.4M  1 loop /snap/core20/1974
+loop0                       7:0    0  63.4M  1 loop /snap/core20/1974
+loop1                       7:1    0  63.5M  1 loop /snap/core20/2015
 loop2                       7:2    0  79.9M  1 loop /snap/lxd/22923
-loop3                       7:3    0  53.3M  1 loop /snap/snapd/19361
 loop4                       7:4    0 111.9M  1 loop /snap/lxd/24322
 loop5                       7:5    0  53.3M  1 loop /snap/snapd/19457
-loop6                       7:6    0  63.5M  1 loop /snap/core20/2015
+loop6                       7:6    0  40.8M  1 loop /snap/snapd/19993
 sda                         8:0    0   250G  0 disk 
 ├─sda1                      8:1    0     1M  0 part 
 ├─sda2                      8:2    0     2G  0 part /boot
@@ -1629,7 +1583,7 @@ sr0                        11:0    1  1024M  0 rom
 $ mount -l
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
-udev on /dev type devtmpfs (rw,nosuid,relatime,size=20457488k,nr_inodes=5114372,mode=755,inode64)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=20457340k,nr_inodes=5114335,mode=755,inode64)
 devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
 tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=4103764k,mode=755,inode64)
 /dev/mapper/ubuntu--vg-ubuntu--lv on / type ext4 (rw,relatime)
@@ -1639,42 +1593,42 @@ tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k,inode6
 cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
 pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
 bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
-systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=30,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=33852)
-mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=30,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=35021)
 hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
 debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
 tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
 fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
-configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
 binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
 none on /run/credentials/systemd-sysusers.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
 vmware-vmblock on /run/vmblock-fuse type fuse.vmware-vmblock (rw,relatime,user_id=0,group_id=0,default_permissions,allow_other)
 tmpfs on /run/qemu type tmpfs (rw,nosuid,nodev,relatime,mode=755,inode64)
 /var/lib/snapd/snaps/core20_1974.snap on /snap/core20/1974 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/core20_2015.snap on /snap/core20/2015 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
 /var/lib/snapd/snaps/lxd_22923.snap on /snap/lxd/22923 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
 /var/lib/snapd/snaps/lxd_24322.snap on /snap/lxd/24322 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
-/var/lib/snapd/snaps/snapd_19361.snap on /snap/snapd/19361 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
 /var/lib/snapd/snaps/snapd_19457.snap on /snap/snapd/19457 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
 /dev/sda2 on /boot type ext4 (rw,relatime)
 /dev/mapper/data--vg-data--lv on /home type ext4 (rw,relatime)
 sunrpc on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
-auto.sw-sg on /sw-sg type autofs (rw,relatime,fd=6,pgrp=1371,timeout=300,minproto=5,maxproto=5,indirect,pipe_ino=55146)
-auto.direct on /ITshare type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /git_lfs type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /synopsys type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /qa type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /llm type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /tools type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /sw_images type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /software type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
-auto.direct on /hl_shared_dir type autofs (rw,relatime,fd=12,pgrp=1371,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=59866)
 10.111.63.251:/users_sw/home/masoolin on /home/masoolin type nfs (rw,noatime,vers=3,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=900,retrans=3,sec=sys,mountaddr=10.111.63.251,mountvers=3,mountport=635,mountproto=tcp,local_lock=none,addr=10.111.63.251)
+auto.sw-sg on /sw-sg type autofs (rw,relatime,fd=6,pgrp=1258,timeout=300,minproto=5,maxproto=5,indirect,pipe_ino=42289)
+auto.direct on /ITshare type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /git_lfs type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /synopsys type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /qa type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /llm type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /tools type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /sw_images type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /software type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
+auto.direct on /hl_shared_dir type autofs (rw,relatime,fd=12,pgrp=1258,timeout=300,minproto=5,maxproto=5,direct,pipe_ino=41080)
 tmpfs on /run/snapd/ns type tmpfs (rw,nosuid,nodev,noexec,relatime,size=4103764k,mode=755,inode64)
 nsfs on /run/snapd/ns/lxd.mnt type nsfs (rw)
 tmpfs on /run/user/10237 type tmpfs (rw,nosuid,nodev,relatime,size=4103760k,nr_inodes=1025940,mode=700,uid=10237,gid=4001,inode64)
 gvfsd-fuse on /run/user/10237/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=10237,group_id=4001)
 portal on /run/user/10237/doc type fuse.portal (rw,nosuid,nodev,relatime,user_id=10237,group_id=4001)
-/var/lib/snapd/snaps/core20_2015.snap on /snap/core20/2015 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/snapd_19993.snap on /snap/snapd/19993 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
 tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=4103760k,nr_inodes=1025940,mode=700,inode64)
 
 
@@ -1683,19 +1637,6 @@ tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=4103760k,nr_inode
   Path    : /usr/bin/docker
   Version : 24.0.5
   build   : ced0996
-",masoolin-vm-u22.habana-labs.com
-,"The following security patches require a reboot but have been installed since the most recent system boot: 
-
-The reboot required flag is set :
-
-*** System restart required ***
-
-The following packages require a reboot :
-
-evolution-data-server
-
-
-
 ",masoolin-vm-u22.habana-labs.com
 ,"
   Path    : /
@@ -1751,16 +1692,11 @@ ens160:
         Scope : link
         ScopeID : 0x20
 docker0:
-  MAC : 02:42:c6:cd:a9:ea
+  MAC : 02:42:b9:bd:0f:e2
   IPv4:
     - Address : 172.17.0.1
         Netmask : 255.255.0.0
         Broadcast : 172.17.255.255
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libeditorconfig0_0.12.5-2
-    Fixed package     : libeditorconfig0_0.12.5-2ubuntu0.1~esm1
-
 ",masoolin-vm-u22.habana-labs.com
 ,"+ lo
   + IPv4
@@ -1780,717 +1716,6 @@ High,"
   + IPv4
     - Address       : 172.17.0.1
       Assign Method : static
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavcodec58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavfilter7_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavfilter7_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil56_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil56_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libpostproc55_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libpostproc55_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample3_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample3_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale5_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale5_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavcodec58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavfilter7_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavfilter7_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil56_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil56_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libpostproc55_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libpostproc55_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample3_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample3_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale5_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale5_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavcodec58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavfilter7_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavfilter7_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil56_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil56_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libpostproc55_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libpostproc55_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample3_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample3_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale5_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale5_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavcodec58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavcodec58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavfilter7_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavfilter7_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavformat58_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavformat58_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libavutil56_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libavutil56_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libpostproc55_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libpostproc55_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswresample3_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswresample3_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale-dev_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-  - Installed package : libswscale5_7:4.4.2-0ubuntu0.22.04.1
-    Fixed package     : libswscale5_7:4.4.2-0ubuntu0.22.04.1+esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : exo-utils_4.16.3-1
-    Fixed package     : exo-utils_4.16.3-1ubuntu0.1~esm1
-
-  - Installed package : libexo-2-0_4.16.3-1
-    Fixed package     : libexo-2-0_4.16.3-1ubuntu0.1~esm1
-
-  - Installed package : libexo-common_4.16.3-1
-    Fixed package     : libexo-common_4.16.3-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : gsasl-common_1.10.0-5
-    Fixed package     : gsasl-common_1.10.0-5ubuntu0.1~esm1
-
-  - Installed package : libgsasl7_1.10.0-5
-    Fixed package     : libgsasl7_1.10.0-5ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libvlc-bin_3.0.16-1build7
-    Fixed package     : libvlc-bin_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlc5_3.0.16-1build7
-    Fixed package     : libvlc5_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlccore9_3.0.16-1build7
-    Fixed package     : libvlccore9_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-data_3.0.16-1build7
-    Fixed package     : vlc-data_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-base_3.0.16-1build7
-    Fixed package     : vlc-plugin-base_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-video-output_3.0.16-1build7
-    Fixed package     : vlc-plugin-video-output_3.0.16-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libvlc-bin_3.0.16-1build7
-    Fixed package     : libvlc-bin_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlc5_3.0.16-1build7
-    Fixed package     : libvlc5_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlccore9_3.0.16-1build7
-    Fixed package     : libvlccore9_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-data_3.0.16-1build7
-    Fixed package     : vlc-data_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-base_3.0.16-1build7
-    Fixed package     : vlc-plugin-base_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-video-output_3.0.16-1build7
-    Fixed package     : vlc-plugin-video-output_3.0.16-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libvlc-bin_3.0.16-1build7
-    Fixed package     : libvlc-bin_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlc5_3.0.16-1build7
-    Fixed package     : libvlc5_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlccore9_3.0.16-1build7
-    Fixed package     : libvlccore9_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-data_3.0.16-1build7
-    Fixed package     : vlc-data_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-base_3.0.16-1build7
-    Fixed package     : vlc-plugin-base_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-video-output_3.0.16-1build7
-    Fixed package     : vlc-plugin-video-output_3.0.16-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libvlc-bin_3.0.16-1build7
-    Fixed package     : libvlc-bin_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlc5_3.0.16-1build7
-    Fixed package     : libvlc5_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlccore9_3.0.16-1build7
-    Fixed package     : libvlccore9_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-data_3.0.16-1build7
-    Fixed package     : vlc-data_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-base_3.0.16-1build7
-    Fixed package     : vlc-plugin-base_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-video-output_3.0.16-1build7
-    Fixed package     : vlc-plugin-video-output_3.0.16-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libvlc-bin_3.0.16-1build7
-    Fixed package     : libvlc-bin_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlc5_3.0.16-1build7
-    Fixed package     : libvlc5_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlccore9_3.0.16-1build7
-    Fixed package     : libvlccore9_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-data_3.0.16-1build7
-    Fixed package     : vlc-data_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-base_3.0.16-1build7
-    Fixed package     : vlc-plugin-base_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-video-output_3.0.16-1build7
-    Fixed package     : vlc-plugin-video-output_3.0.16-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libvlc-bin_3.0.16-1build7
-    Fixed package     : libvlc-bin_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlc5_3.0.16-1build7
-    Fixed package     : libvlc5_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlccore9_3.0.16-1build7
-    Fixed package     : libvlccore9_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-data_3.0.16-1build7
-    Fixed package     : vlc-data_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-base_3.0.16-1build7
-    Fixed package     : vlc-plugin-base_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-video-output_3.0.16-1build7
-    Fixed package     : vlc-plugin-video-output_3.0.16-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : libvlc-bin_3.0.16-1build7
-    Fixed package     : libvlc-bin_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlc5_3.0.16-1build7
-    Fixed package     : libvlc5_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : libvlccore9_3.0.16-1build7
-    Fixed package     : libvlccore9_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-data_3.0.16-1build7
-    Fixed package     : vlc-data_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-base_3.0.16-1build7
-    Fixed package     : vlc-plugin-base_3.0.16-1ubuntu0.1~esm1
-
-  - Installed package : vlc-plugin-video-output_3.0.16-1build7
-    Fixed package     : vlc-plugin-video-output_3.0.16-1ubuntu0.1~esm1
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-",masoolin-vm-u22.habana-labs.com
-High,"
-  - Installed package : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6-common_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : imagemagick-6.q16_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickcore-6.q16-6-extra_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
-  - Installed package : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-    Fixed package     : libmagickwand-6.q16-6_8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3+esm2
-
 ",masoolin-vm-u22.habana-labs.com
 High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-76 for this advisory.
 
@@ -2529,128 +1754,36 @@ Interface Routes:
     ipv6_subnets:
      - fe80::/64
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : intel-microcode_3.20230214.0ubuntu0.22.04.1
-    Fixed package     : intel-microcode_3.20230808.0ubuntu0.22.04.1
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : intel-microcode_3.20230214.0ubuntu0.22.04.1
-    Fixed package     : intel-microcode_3.20230808.0ubuntu0.22.04.1
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : intel-microcode_3.20230214.0ubuntu0.22.04.1
-    Fixed package     : intel-microcode_3.20230808.0ubuntu0.22.04.1
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
-
-",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
-
-",masoolin-vm-u22.habana-labs.com
-Medium,"
-  - Installed package : libtiff-dev_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff-dev_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiff5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiff5_4.3.0-6ubuntu0.5
-
-  - Installed package : libtiffxx5_4.3.0-6ubuntu0.4
-    Fixed package     : libtiffxx5_4.3.0-6ubuntu0.5
+High,"Running Kernel level of 5.15.0-75 does not meet the minimum fixed level of 5.15.0-82 for this advisory.
 
 ",masoolin-vm-u22.habana-labs.com

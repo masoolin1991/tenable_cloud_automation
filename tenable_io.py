@@ -49,7 +49,7 @@ for scan in scans:
 
 
 new_scan_id_str=str(new_scan_id)
-"""
+
 tio.scans.launch(new_scan_id)
 
 
@@ -63,11 +63,11 @@ while scan_running == True:
         else:
              print("scan in progress at status", scan_status_reader)
 
-"""
 
 
-new_scan_id_str=("1231")  # to del
-new_scan_id = 1231
+
+#new_scan_id_str=("1231")  # to del
+#new_scan_id = 1231
 
 
 
